@@ -1,0 +1,4894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career roadmap After Engineering - Career Mela</title>
+    <style>
+        /* ===================================
+   Career Roadmap After Engineering - Career Mela
+   Modern, Professional Design
+   =================================== */
+
+/* ===== CSS Variables ===== */
+:root {
+    --primary-gold: #FFD700;
+    --dark-gold: #DAA520;
+    --light-gold: #B8860B;
+    --black: #000000;
+    --dark-black: #0a0a0a;
+    --medium-black: #1a1a1a;
+    --light-black: #2a2a2a;
+    --white: #ffffff;
+    --text-white: #ffffff;
+    --text-light: #cccccc;
+    --text-gold: #FFD700;
+    --shadow: rgba(255, 215, 0, 0.2);
+    --shadow-hover: rgba(255, 215, 0, 0.4);
+    --gradient-gold: linear-gradient(135deg, #FFD700 0%, #DAA520 100%);
+    --gradient-dark: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    --gradient-royal: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+}
+
+/* ===== Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-white);
+    background-color: var(--black);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ===== Navigation ===== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(255, 215, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-gold);
+}
+
+/* Desktop - keep brand on one line */
+.brand-text {
+    display: inline;
+}
+
+.brand-line2 {
+    display: inline;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-gold);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-gold);
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--primary-gold);
+    transition: all 0.3s ease;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-dark);
+    background-image: 
+        radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        linear-gradient(180deg, transparent 0%, rgba(255, 215, 0, 0.02) 100%);
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,215,0,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+    max-width: 900px;
+    padding: 2rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 215, 0, 0.1);
+    border: 2px solid var(--primary-gold);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    animation: pulse 2s infinite;
+}
+
+.hero-badge i {
+    color: var(--primary-gold);
+}
+
+.hero-title {
+    font-size: 4rem;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease 0.2s backwards;
+}
+
+.hero-tagline {
+    font-size: 1.8rem;
+    color: var(--primary-gold);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease 0.4s backwards;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.6s backwards;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    animation: fadeInUp 1s ease 0.8s backwards;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    animation: fadeInUp 1s ease 1s backwards;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 0.5rem;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 0.3rem;
+}
+
+.stat-item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator i {
+    font-size: 2rem;
+    color: var(--primary-gold);
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    background: var(--gradient-gold);
+    color: var(--black);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.5);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--primary-gold);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 215, 0, 0.1);
+    transition: width 0.3s;
+    z-index: -1;
+}
+
+.btn-secondary:hover::before {
+    width: 100%;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-gold);
+    color: var(--black);
+    transform: translateY(-3px);
+}
+
+.btn-large {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* ===== Section Styles ===== */
+section {
+    padding: 5rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-badge {
+    display: inline-block;
+    background: var(--gradient-gold);
+    color: var(--black);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-header h2 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-gold);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.section-header p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== About Section ===== */
+.about {
+    background: var(--gradient-royal);
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid2" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,215,0,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid2)"/></svg>');
+    opacity: 0.5;
+}
+
+.about-text {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-text .lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-white);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.highlight {
+    color: var(--dark-gold);
+    font-weight: 600;
+}
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--medium-black);
+    border: 1px solid var(--primary-gold);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px var(--shadow-hover);
+    border-color: var(--dark-gold);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    flex-shrink: 0;
+}
+
+.feature-item h4 {
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* ===== Agenda/Timeline Section ===== */
+.agenda {
+    background: var(--black);
+    position: relative;
+}
+
+.agenda::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--gradient-gold);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 10px rgba(255, 215, 0, 0.2);
+    z-index: 2;
+}
+
+.timeline-marker i {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.timeline-content {
+    width: calc(50% - 60px);
+    background: var(--medium-black);
+    border: 2px solid var(--primary-gold);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: auto;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 30px var(--shadow-hover);
+    border-color: var(--dark-gold);
+    background: rgba(255, 215, 0, 0.02);
+}
+
+.day-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.day-1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+}
+
+.day-2 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: var(--white);
+}
+
+.day-3 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: var(--white);
+}
+
+.timeline-content h3 {
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+.day-subtitle {
+    color: var(--text-gold);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.audience-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid var(--primary-gold);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--text-white);
+    margin-bottom: 1.5rem;
+}
+
+.audience-badge i {
+    color: var(--dark-gold);
+}
+
+.highlights h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-white);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.highlights h4 i {
+    color: var(--primary-gold);
+}
+
+.highlights ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-light);
+}
+
+.highlights li i {
+    color: var(--dark-gold);
+    margin-top: 0.3rem;
+    flex-shrink: 0;
+}
+
+.topics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.topic-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--light-black);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.topic-tag:hover {
+    background: var(--primary-gold);
+    color: var(--black);
+    transform: translateY(-2px);
+}
+
+.topic-tag i {
+    font-size: 0.9rem;
+}
+
+/* ===== Speakers Section ===== */
+.speakers {
+    background: var(--gradient-dark);
+    position: relative;
+}
+
+.speakers::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 30%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.speaker-card {
+    background: var(--medium-black);
+    border: 2px solid var(--primary-gold);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.speaker-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px var(--shadow-hover);
+    border-color: var(--dark-gold);
+}
+
+.speaker-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.speaker-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.speaker-card:hover .speaker-image img {
+    transform: scale(1.1);
+}
+
+.speaker-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.speaker-card:hover .speaker-overlay {
+    opacity: 1;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-gold);
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    background: var(--white);
+}
+
+.speaker-info {
+    padding: 1.5rem;
+}
+
+.speaker-info h4 {
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+.speaker-role {
+    color: var(--dark-gold);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.speaker-topic {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.speaker-topic i {
+    color: var(--primary-gold);
+}
+
+/* ===== Registration Section ===== */
+.register {
+    background: var(--black);
+    position: relative;
+}
+
+.register::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.registration-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.stat-card {
+    background: var(--medium-black);
+    border: 1px solid var(--primary-gold);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    min-width: 120px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px var(--shadow-hover);
+    border-color: var(--dark-gold);
+}
+
+.stat-card .stat-number {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--primary-gold);
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.stat-card .stat-label {
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.register-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.register-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-card {
+    background: var(--medium-black);
+    border: 1px solid var(--primary-gold);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.info-card h3 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+
+.eligibility-list {
+    list-style: none;
+}
+
+.eligibility-list li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.eligibility-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.eligibility-list strong {
+    display: block;
+    color: var(--primary-gold);
+    margin-bottom: 0.3rem;
+}
+
+.eligibility-list span {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefits-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-white);
+}
+
+.benefits-list i {
+    color: var(--dark-gold);
+    font-size: 1.2rem;
+}
+
+.register-form-container {
+    background: var(--medium-black);
+    border: 2px solid var(--primary-gold);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-white);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group label i {
+    color: var(--primary-gold);
+}
+
+.form-group input,
+.form-group select {
+    padding: 1rem;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    background: var(--light-black);
+    color: var(--text-white);
+}
+
+.form-group select option {
+    background: var(--medium-black);
+    color: var(--text-white);
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary-gold);
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-white);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.checkbox-label i {
+    color: var(--primary-gold);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: var(--light-black);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkbox-item:hover {
+    background: rgba(255, 215, 0, 0.1);
+    border-color: var(--primary-gold);
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--primary-gold);
+}
+
+.checkbox-item span {
+    color: var(--text-white);
+}
+
+.warning-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid var(--primary-gold);
+    border-radius: 10px;
+    color: var(--primary-gold);
+    font-size: 0.9rem;
+    display: none;
+}
+
+.warning-message.show {
+    display: block;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    background: var(--gradient-royal);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid3" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,215,0,0.03)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid3)"/></svg>');
+    opacity: 0.5;
+}
+
+.contact-content {
+    display: grid;
+    gap: 3rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contact-card {
+    background: var(--medium-black);
+    border: 1px solid var(--primary-gold);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px var(--shadow);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px var(--shadow-hover);
+    border-color: var(--dark-gold);
+    background: rgba(255, 215, 0, 0.02);
+}
+
+.contact-card i {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.social-links-contact {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    background: var(--primary-gold);
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: scale(1.1);
+    background: var(--dark-gold);
+}
+
+.organizing-team {
+    background: var(--medium-black);
+    border: 2px solid var(--primary-gold);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px var(--shadow);
+}
+
+.organizing-team h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-white);
+    margin-bottom: 2rem;
+}
+
+.organizing-team h3 i {
+    color: var(--primary-gold);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--light-black);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 215, 0, 0.1);
+    border-color: var(--primary-gold);
+}
+
+.team-member i {
+    font-size: 3rem;
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.team-member h4 {
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: var(--gradient-dark);
+    color: var(--white);
+    padding: 3rem 0 1rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-brand i {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+}
+
+.footer-brand h3 {
+    color: var(--primary-gold);
+}
+
+.footer-brand p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-links h4 {
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-gold);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+}
+
+/* ===== Scroll to Top Button ===== */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+    color: var(--black);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Admin Access Button */
+.admin-access-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #333, #555);
+    color: var(--primary-gold);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0.7;
+}
+
+.admin-access-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+    border-color: var(--primary-gold);
+}
+
+.admin-access-btn:active {
+    transform: translateY(0);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .admin-access-btn {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        left: 20px;
+        font-size: 0.9rem;
+    }
+    
+    .scroll-top {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 1024px) {
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        flex-direction: row !important;
+    }
+
+    .timeline-marker {
+        left: 30px;
+        transform: translateX(0);
+        width: 60px;
+        height: 60px;
+    }
+
+    .timeline-marker i {
+        font-size: 1.5rem;
+    }
+
+    .timeline-content {
+        width: calc(100% - 100px);
+        margin-left: auto !important;
+    }
+
+    .register-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        transition: left 0.3s ease;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 100vh;
+        padding: 1rem 0;
+    }
+    
+    .hero-content {
+        padding: 2rem 1rem;
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-item h3 {
+        font-size: 1.8rem;
+    }
+    
+    .stat-item p {
+        font-size: 0.9rem;
+    }
+    
+    .fomo-text {
+        font-size: 0.8rem;
+    }
+    
+    .fomo-banner {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+    
+    .fomo-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .fomo-content span {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    /* General */
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    section {
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    .container {
+        padding: 0 1rem;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    /* Navigation */
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .nav-brand {
+        font-size: 1.1rem;
+        line-height: 1.2;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .nav-brand i {
+        font-size: 1.3rem;
+    }
+    
+    .brand-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .brand-line2 {
+        display: block;
+        font-size: 0.95rem;
+        margin-top: -0.2rem;
+    }
+    
+    /* Hero Section */
+    .hero {
+        min-height: 100vh;
+        padding: 0;
+    }
+    
+    .hero-content {
+        padding: 1.5rem 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .hero-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-title {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        word-wrap: break-word;
+    }
+    
+    .hero-tagline {
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        padding: 0 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .hero-buttons {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: none;
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .hero-stats {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .stat-item {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: var(--medium-black);
+        border: 2px solid rgba(255, 215, 0, 0.3);
+        border-radius: 15px;
+    }
+    
+    .stat-item i {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: var(--primary-gold);
+    }
+    
+    .stat-item h3 {
+        font-size: 1.8rem;
+        margin: 0.3rem 0;
+        color: var(--primary-gold);
+    }
+    
+    .stat-item p {
+        font-size: 0.9rem;
+        margin: 0.2rem 0;
+        color: var(--text-white);
+    }
+    
+    .fomo-text {
+        font-size: 0.75rem;
+        color: #ff6b35;
+        font-weight: 600;
+    }
+    
+    .fomo-banner {
+        margin: 1rem 0;
+        padding: 0.8rem;
+    }
+    
+    .fomo-content {
+        font-size: 0.8rem;
+    }
+    
+    .fomo-content i {
+        font-size: 1.2rem;
+    }
+    
+    /* Pricing */
+    .pricing-banner {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .pricing-options {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .price-option {
+        width: 100%;
+        min-width: auto;
+        padding: 1.5rem 1rem;
+    }
+    
+    .price {
+        font-size: 2.5rem;
+    }
+    
+    /* Section Headers */
+    .section-header h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    
+    .section-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    /* Pain Cards */
+    .pain-cards-grid {
+        padding: 0 0.5rem;
+    }
+    
+    .pain-card {
+        margin-bottom: 1rem;
+    }
+    
+    .pain-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .pain-icon i {
+        font-size: 1.5rem;
+    }
+    
+    /* Timeline */
+    .timeline-content {
+        padding: 1rem;
+    }
+    
+    .day-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Registration Form */
+    .register-form-container {
+        padding: 1rem;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .pricing-selection {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-card {
+        padding: 1rem;
+    }
+    
+    .price-display {
+        font-size: 1.8rem;
+    }
+    
+    /* Payment Section Mobile */
+    .payment-section {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .payment-label {
+        font-size: 1rem;
+    }
+    
+    .upi-button {
+        width: 100%;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .app-links {
+        flex-wrap: wrap;
+    }
+    
+    .app-link {
+        width: 50px;
+        height: 50px;
+        padding: 0.6rem;
+    }
+    
+    .qr-code {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .payment-instructions {
+        padding: 1rem;
+    }
+    
+    .payment-instructions ol {
+        font-size: 0.85rem;
+    }
+
+    .registration-stats { 
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .footer-content { grid-template-columns: 1fr; text-align: center; }
+    .footer-bottom { flex-direction: column; gap: 15px; }
+    .benefits { grid-template-columns: 1fr; }
+}
+
+/* iPhone and similar devices */
+@media (max-width: 390px) {
+    .hero-title {
+        font-size: 1.4rem;
+    }
+    
+    .hero-tagline {
+        font-size: 0.9rem;
+    }
+    
+    .hero-description {
+        font-size: 0.8rem;
+    }
+    
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.7rem 1.2rem;
+    }
+    
+    .stat-item h3 {
+        font-size: 1.5rem;
+    }
+    
+    .stat-item p {
+        font-size: 0.8rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.3rem;
+    }
+}
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    .register-form-container {
+        padding: 1.5rem;
+    }
+}
+
+/* ===== Pricing Banner Styles ===== */
+.pricing-banner {
+    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 3rem 0;
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.3);
+}
+
+.pricing-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.price-option {
+    background: var(--black);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    min-width: 200px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.price-option.popular {
+    border-color: var(--primary-gold);
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff4500, #ff6b35);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.price-option h4 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--primary-gold);
+    margin: 1rem 0;
+    line-height: 1;
+}
+
+.price-option p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.savings {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Session Block Styles */
+.session-block {
+    background: rgba(255, 215, 0, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.session-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.session-header i {
+    font-size: 1.5rem;
+    color: var(--primary-gold);
+}
+
+.session-header h5 {
+    color: var(--text-white);
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Payment Section Styles */
+.payment-section {
+    background: var(--medium-black);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-gold);
+    margin-bottom: 1.5rem;
+}
+
+.payment-info {
+    display: grid;
+    gap: 2rem;
+}
+
+.upi-details {
+    text-align: center;
+}
+
+.upi-details h4 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.upi-id {
+    background: var(--light-black);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.upi-id strong {
+    color: var(--primary-gold);
+    font-size: 1.1rem;
+    font-family: monospace;
+}
+
+.payment-buttons {
+    margin-bottom: 2rem;
+}
+
+.upi-button {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+    color: var(--black);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.upi-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4);
+}
+
+.app-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.app-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 15px;
+    padding: 0.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+}
+
+.app-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.qr-code-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.qr-code-section h5 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.qr-code-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.qr-code {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+
+.qr-instruction {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.payment-instructions {
+    background: rgba(255, 215, 0, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.payment-instructions h5 {
+    color: var(--primary-gold);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.payment-instructions ol {
+    color: var(--text-light);
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.payment-instructions ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.payment-instructions li {
+    margin-bottom: 0.5rem;
+}
+
+.payment-proof {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.payment-proof label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.payment-proof input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--light-black);
+    border: 2px dashed rgba(255, 215, 0, 0.3);
+    border-radius: 10px;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-proof input[type="file"]:hover {
+    border-color: var(--primary-gold);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.upload-note {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* Registration Form Pricing */
+.pricing-selection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pricing-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-item input[type="radio"] {
+    display: none;
+}
+
+.pricing-card {
+    background: var(--medium-black);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-item:hover .pricing-card {
+    border-color: var(--primary-gold);
+    transform: translateY(-2px);
+}
+
+.pricing-item input[type="radio"]:checked + .pricing-card {
+    border-color: var(--primary-gold);
+    background: rgba(255, 215, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(255, 215, 0, 0.3);
+}
+
+.pricing-card h4 {
+    color: var(--text-white);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.price-display {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--primary-gold);
+    margin: 0.5rem 0;
+    line-height: 1;
+}
+
+.pricing-card p {
+    color: var(--text-light);
+    margin: 0.5rem 0 0 0;
+    font-size: 0.9rem;
+}
+
+.popular-package .pricing-card {
+    border-color: var(--primary-gold);
+    background: rgba(255, 215, 0, 0.05);
+}
+
+.popular-tag {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #ff4500, #ff6b35);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.savings-tag {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+/* ===== POMO Marketing Styles ===== */
+
+/* Pain Cards Design */
+.pain-cards-wrapper {
+    margin-bottom: 3rem;
+}
+
+.pain-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.pain-card {
+    background: var(--medium-black);
+    border: 2px solid rgba(255, 69, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.pain-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 69, 0, 0.05) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pain-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 69, 0, 0.8);
+    box-shadow: 0 10px 40px rgba(255, 69, 0, 0.3);
+}
+
+.pain-card:hover::before {
+    opacity: 1;
+}
+
+.pain-card-header {
+    background: linear-gradient(135deg, var(--light-black), var(--medium-black));
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 69, 0, 0.2);
+}
+
+.pain-icon {
+    background: linear-gradient(135deg, #ff4500, #ff6b35);
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 6px 20px rgba(255, 69, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.pain-card:hover .pain-icon {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(255, 69, 0, 0.6);
+}
+
+.pain-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.pain-card-header h3 {
+    color: var(--text-white);
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.pain-card-body {
+    padding: 2rem;
+}
+
+.pain-card-body p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Outcomes Section */
+.outcomes {
+    background: var(--gradient-dark);
+    position: relative;
+}
+
+.outcomes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.outcomes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.outcome-item {
+    background: var(--medium-black);
+    border: 2px solid var(--primary-gold);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.outcome-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.outcome-item:hover::before {
+    opacity: 1;
+}
+
+.outcome-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px var(--shadow-hover);
+    border-color: var(--dark-gold);
+}
+
+.outcome-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.outcome-item h3 {
+    color: var(--text-white);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.outcome-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Success Stories */
+.success-stories {
+    background: var(--medium-black);
+    border: 1px solid var(--primary-gold);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-top: 4rem;
+}
+
+.success-stories h3 {
+    text-align: center;
+    color: var(--text-white);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial {
+    background: var(--light-black);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+}
+
+.testimonial::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 4rem;
+    color: var(--primary-gold);
+    line-height: 1;
+}
+
+.testimonial p {
+    color: var(--text-white);
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.testimonial cite {
+    color: var(--primary-gold);
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Method Benefits */
+.method-benefit {
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid var(--primary-gold);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-white);
+    font-size: 1rem;
+}
+
+/* Objections Section */
+.objections {
+    background: var(--black);
+    position: relative;
+}
+
+.objections::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 215, 0, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.objections-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.objection-card {
+    background: var(--medium-black);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.objection-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.objection-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-gold);
+    box-shadow: 0 10px 40px var(--shadow-hover);
+}
+
+.objection-card:hover::before {
+    opacity: 1;
+}
+
+.card-header {
+    background: linear-gradient(135deg, var(--light-black), var(--medium-black));
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.objection-icon {
+    background: linear-gradient(135deg, #ff6b35, #ff4500);
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.objection-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.objection-title h3 {
+    color: var(--text-white);
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.answer-label {
+    background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+    color: var(--black);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-body p {
+    color: var(--text-light);
+    line-height: 1.7;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Urgency Section */
+.urgency-section {
+    display: flex;
+    justify-content: center;
+}
+
+.urgency-card {
+    background: linear-gradient(135deg, var(--primary-gold) 0%, var(--dark-gold) 100%);
+    color: var(--black);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.4);
+    animation: pulse 2s infinite;
+}
+
+.urgency-card h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.urgency-card p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.countdown-text {
+    background: var(--black);
+    color: var(--primary-gold);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Responsive for POMO sections */
+@media (max-width: 768px) {
+    .pain-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .pain-card-header {
+        padding: 1.5rem;
+    }
+    
+    .pain-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+    
+    .pain-icon i {
+        font-size: 2rem;
+    }
+    
+    .pain-card-body {
+        padding: 1.5rem;
+    }
+    
+    .outcomes-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .objections-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .card-header {
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .objection-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .objection-icon i {
+        font-size: 1.5rem;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+    
+    .urgency-card {
+        padding: 2rem;
+    }
+}
+
+/* ===== FOMO Marketing Styles ===== */
+
+/* FOMO Stats */
+.fomo-stat {
+    position: relative;
+    border: 2px solid #ff6b35 !important;
+    animation: fomo-pulse 2s infinite;
+}
+
+.fomo-stat:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+}
+
+.fomo-text {
+    color: #ff6b35;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: blink 1.5s infinite;
+}
+
+/* FOMO Banner */
+.fomo-banner {
+    background: linear-gradient(135deg, #ff6b35, #ff4500);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    text-align: center;
+    animation: shake 3s infinite;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+}
+
+.fomo-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.fomo-content i {
+    font-size: 1.5rem;
+    animation: bounce 1s infinite;
+}
+
+/* FOMO Alert */
+.fomo-alert {
+    background: linear-gradient(135deg, #ff4500, #ff6b35);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    text-align: center;
+    animation: fomo-glow 2s infinite;
+}
+
+.fomo-alert p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* FOMO Testimonials */
+.fomo-testimonial {
+    position: relative;
+    border: 2px solid var(--primary-gold);
+}
+
+.recent-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: #ff4500;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    animation: bounce 2s infinite;
+}
+
+.fomo-note {
+    color: #ff6b35;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Live Activity Feed */
+.live-activity {
+    background: var(--light-black);
+    border: 2px solid #ff4500;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.live-activity h4 {
+    color: #ff4500;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.activity-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.activity-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.8rem;
+    background: rgba(255, 107, 53, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid #ff4500;
+    animation: slideInLeft 0.5s ease;
+}
+
+.activity-time {
+    color: #ff6b35;
+    font-weight: 600;
+    font-size: 0.9rem;
+    min-width: 100px;
+}
+
+.activity-text {
+    color: var(--text-white);
+    font-weight: 500;
+}
+
+/* FOMO Urgency Enhancements */
+.fomo-urgency {
+    border: 3px solid #ff4500 !important;
+    animation: fomo-urgent 1.5s infinite;
+}
+
+.seat-counter {
+    margin: 1.5rem 0;
+}
+
+.seats-visual {
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.seat {
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.seat.taken {
+    color: #ff4500;
+    animation: taken-pulse 2s infinite;
+}
+
+.seat.available {
+    color: #22c55e;
+    animation: available-blink 1s infinite;
+}
+
+.fomo-pressure {
+    margin: 1.5rem 0;
+}
+
+.fomo-pressure p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.pulsing {
+    animation: urgent-pulse 1s infinite;
+}
+
+.fomo-consequence {
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid #ff4500;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.fomo-consequence small {
+    color: #ff6b35;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* FOMO Registration Stats */
+.fomo-stats .stat-card {
+    border: 2px solid #ff4500;
+    animation: fomo-stat-pulse 2s infinite;
+}
+
+.fomo-stat-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.4);
+}
+
+.fomo-subtext {
+    color: #ff6b35;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* FOMO Registration Alert */
+.fomo-registration-alert {
+    background: linear-gradient(135deg, #ff4500, #ff6b35);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    animation: alert-flash 3s infinite;
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.alert-content i {
+    font-size: 2rem;
+    animation: bounce 1s infinite;
+}
+
+.alert-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.highlight {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* FOMO Animations */
+@keyframes fomo-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+@keyframes fomo-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 53, 0.3); }
+    50% { box-shadow: 0 0 30px rgba(255, 107, 53, 0.6); }
+}
+
+@keyframes fomo-urgent {
+    0%, 100% { border-color: #ff4500; }
+    50% { border-color: #ff6b35; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+}
+
+@keyframes taken-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+@keyframes available-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+@keyframes urgent-pulse {
+    0%, 100% { transform: scale(1); background: var(--black); }
+    50% { transform: scale(1.05); background: rgba(255, 69, 0, 0.1); }
+}
+
+@keyframes fomo-stat-pulse {
+    0%, 100% { border-color: #ff4500; }
+    50% { border-color: #ff6b35; }
+}
+
+@keyframes alert-flash {
+    0%, 90%, 100% { opacity: 1; }
+    95% { opacity: 0.8; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* FOMO Responsive */
+@media (max-width: 768px) {
+    .fomo-banner {
+        padding: 1rem;
+    }
+    
+    .fomo-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .seats-visual {
+        gap: 0.2rem;
+    }
+    
+    .seat {
+        font-size: 1.5rem;
+    }
+    
+    .alert-content {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/v4-shims.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-trophy"></i>
+                <span class="brand-text">Career Roadmap <span class="brand-line2">After Engineering</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <span>Career Mela 2025</span>
+            </div>
+            <h1 class="hero-title">Stop Feeling Lost About Your Career After Engineering</h1>
+            <p class="hero-tagline">"From Confusion to Clarity in Just 2 Days"</p>
+            <p class="hero-description">Finally discover your perfect career path with Career Mela 2025 - covering all opportunities from tech jobs to entrepreneurship to government positions</p>
+            <div class="hero-buttons">
+                <a href="#register" class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i> Register Now
+                </a>
+                <a href="#agenda" class="btn btn-secondary">
+                    <i class="fas fa-calendar-alt"></i> View Agenda
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item fomo-stat">
+                    <i class="fas fa-fire"></i>
+                    <h3 id="seats-left">100</h3>
+                    <p>Seats Left</p>
+                    <span class="fomo-text">Filling Fast!</span>
+                </div>
+                <div class="stat-item fomo-stat">
+                    <i class="fas fa-clock"></i>
+                    <h3 id="countdown-days">4</h3>
+                    <p>Days Left</p>
+                    <span class="fomo-text">To Register</span>
+                </div>
+                <div class="stat-item fomo-stat">
+                    <i class="fas fa-users"></i>
+                    <h3>500+</h3>
+                    <p>Alumni Success</p>
+                    <span class="fomo-text">Don't Be Left Behind</span>
+                </div>
+            </div>
+            
+            <!-- FOMO Banner -->
+            <div class="fomo-banner">
+                <div class="fomo-content">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span><strong>URGENT:</strong> Your classmates are already registering! Don't let them get ahead while you're still confused about your career.</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Pain Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">The Problem Every Engineering Student Faces</span>
+                <h2>Are You Struggling With These Career Challenges?</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="pain-cards-wrapper">
+                    <div class="pain-cards-grid">
+                        <div class="pain-card">
+                            <div class="pain-card-header">
+                                <div class="pain-icon">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <h3>Career Confusion</h3>
+                            </div>
+                            <div class="pain-card-body">
+                                <p>Overwhelmed by endless career options and unsure which path will lead to success and fulfillment.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pain-card">
+                            <div class="pain-card-header">
+                                <div class="pain-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h3>Time Pressure</h3>
+                            </div>
+                            <div class="pain-card-body">
+                                <p>Final year approaching fast while you're still figuring out your next step in life.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pain-card">
+                            <div class="pain-card-header">
+                                <div class="pain-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h3>Peer Competition</h3>
+                            </div>
+                            <div class="pain-card-body">
+                                <p>Watching others secure jobs and opportunities while you're still searching for direction.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pain-card">
+                            <div class="pain-card-header">
+                                <div class="pain-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h3>Decision Paralysis</h3>
+                            </div>
+                            <div class="pain-card-body">
+                                <p>Fear of making the wrong choice keeps you stuck and unable to move forward confidently.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="lead">If you're nodding your head to any of these, you're not alone. <strong>78% of engineering students</strong> feel confused about their career direction. But here's the good news – <span class="highlight">we have the solution</span>.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Industry Insights</h4>
+                                <p>Learn from experts about tech & non-tech career paths</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h4>Startup Ecosystem</h4>
+                                <p>Discover how to build and fund your own venture</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>Higher Education</h4>
+                                <p>Navigate government exams and study abroad opportunities</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-network-wired"></i>
+                            <div>
+                                <h4>Networking</h4>
+                                <p>Connect with alumni, industry leaders, and peers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section (Agenda) -->
+    <section id="agenda" class="agenda">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Proven 2-Day Method</span>
+                <h2>Complete Career Roadmap in Just 2 Days</h2>
+                <div class="section-divider"></div>
+                <p>Here's our comprehensive 2-day system that covers all career paths - from tech jobs to entrepreneurship to government positions</p>
+            </div>
+            
+            <!-- Pricing Banner -->
+            <div class="pricing-banner">
+                <div class="pricing-options">
+                    <div class="price-option">
+                        <h4>Single Day</h4>
+                        <div class="price">₹39</div>
+                        <p>Per Day</p>
+                    </div>
+                    <div class="price-option popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <h4>Both Days</h4>
+                        <div class="price">₹75</div>
+                        <p>Complete Package</p>
+                        <div class="savings">Save ₹3!</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <!-- Day 1 -->
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="day-badge day-1">Day 1</div>
+                        <h3>Discover Your Perfect Job Path</h3>
+                        <p class="day-subtitle">From Confusion to Job Offers</p>
+                        <div class="method-benefit">
+                            <strong>What You'll Get:</strong> Complete job market analysis + personalized career matching + interview-ready skills
+                        </div>
+                        <div class="highlights">
+                            <h4><i class="fas fa-star"></i> Step-by-Step Process</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> <strong>Career Assessment:</strong> Discover which tech/non-tech roles match your personality</li>
+                                <li><i class="fas fa-check"></i> <strong>Market Reality Check:</strong> Learn which skills actually get you hired in 2025</li>
+                                <li><i class="fas fa-check"></i> <strong>Resume Makeover:</strong> Get your resume reviewed by hiring managers</li>
+                                <li><i class="fas fa-check"></i> <strong>Network Building:</strong> Connect with recruiters and industry professionals</li>
+                            </ul>
+                        </div>
+                        <div class="topics-grid">
+                            <span class="topic-tag"><i class="fas fa-robot"></i> AI & ML</span>
+                            <span class="topic-tag"><i class="fas fa-cloud"></i> Cloud Computing</span>
+                            <span class="topic-tag"><i class="fas fa-database"></i> Data Analytics</span>
+                            <span class="topic-tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+                            <span class="topic-tag"><i class="fas fa-chart-line"></i> Business Analyst</span>
+                            <span class="topic-tag"><i class="fas fa-bullhorn"></i> Digital Marketing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="day-badge day-2">Day 2</div>
+                        <h3>Entrepreneurship & Government Opportunities</h3>
+                        <p class="day-subtitle">Build Your Business or Secure Government Position</p>
+                        <div class="method-benefit">
+                            <strong>What You'll Get:</strong> Complete startup blueprint + government exam strategy + funding & scholarship guidance
+                        </div>
+                        
+                        <!-- Morning Session -->
+                        <div class="session-block">
+                            <div class="session-header">
+                                <i class="fas fa-sun"></i>
+                                <h5>Morning Session: Entrepreneurship (9 AM - 12 PM)</h5>
+                            </div>
+                            <div class="highlights">
+                                <h4><i class="fas fa-star"></i> Startup Success Formula</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> <strong>Idea Validation:</strong> Test if your startup idea will actually make money</li>
+                                    <li><i class="fas fa-check"></i> <strong>Funding Strategy:</strong> Get the exact steps to raise your first ₹10L</li>
+                                    <li><i class="fas fa-check"></i> <strong>Mentor Matching:</strong> Connect with successful entrepreneurs</li>
+                                    <li><i class="fas fa-check"></i> <strong>Live Pitch Practice:</strong> Present your idea and get expert feedback</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Afternoon Session -->
+                        <div class="session-block">
+                            <div class="session-header">
+                                <i class="fas fa-moon"></i>
+                                <h5>Afternoon Session: Government Jobs & Higher Studies (1 PM - 3 PM)</h5>
+                            </div>
+                            <div class="highlights">
+                                <h4><i class="fas fa-star"></i> Government Success Strategy</h4>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> <strong>Exam Mastery:</strong> GATE, CAT, UPSC, SSC preparation strategies</li>
+                                    <li><i class="fas fa-check"></i> <strong>Scholarship Secrets:</strong> Get full funding for your dream university</li>
+                                    <li><i class="fas fa-check"></i> <strong>Government Job Roadmap:</strong> Step-by-step preparation guide</li>
+                                    <li><i class="fas fa-check"></i> <strong>Personal Guidance:</strong> One-on-one sessions with toppers and officers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="topics-grid">
+                            <span class="topic-tag"><i class="fas fa-lightbulb"></i> Startup Ideas</span>
+                            <span class="topic-tag"><i class="fas fa-money-bill-wave"></i> Funding</span>
+                            <span class="topic-tag"><i class="fas fa-book"></i> GATE/CAT</span>
+                            <span class="topic-tag"><i class="fas fa-flag"></i> UPSC/SSC</span>
+                            <span class="topic-tag"><i class="fas fa-graduation-cap"></i> Higher Studies</span>
+                            <span class="topic-tag"><i class="fas fa-globe"></i> Scholarships</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objection Section -->
+    <section class="objections">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">But Wait... You Might Be Thinking</span>
+                <h2>Let's Address Your Concerns</h2>
+                <div class="section-divider"></div>
+                <p>We know you might have some doubts. Here are the most common concerns students have:</p>
+            </div>
+            
+            <div class="objections-cards">
+                <div class="objection-card">
+                    <div class="card-header">
+                        <div class="objection-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="objection-title">
+                            <h3>"I don't have time for a 2-day event"</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="answer-label">Reality Check:</div>
+                        <p>You'll spend the next 40 years working. Isn't 2 days worth investing to get it right? Plus, this event will save you months of confusion and wrong decisions.</p>
+                    </div>
+                </div>
+                
+                <div class="objection-card">
+                    <div class="card-header">
+                        <div class="objection-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="objection-title">
+                            <h3>"What if it's just generic advice?"</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="answer-label">We Guarantee:</div>
+                        <p>Every session includes personalized assessments, one-on-one guidance, and industry-specific insights. No generic fluff - only actionable strategies.</p>
+                    </div>
+                </div>
+                
+                <div class="objection-card">
+                    <div class="card-header">
+                        <div class="objection-icon">
+                            <i class="fas fa-user-clock"></i>
+                        </div>
+                        <div class="objection-title">
+                            <h3>"I'm not sure about my interests yet"</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="answer-label">Perfect!</div>
+                        <p>That's exactly why you need this event. Our career assessment tools and expert guidance will help you discover your true interests and strengths.</p>
+                    </div>
+                </div>
+                
+                <div class="objection-card">
+                    <div class="card-header">
+                        <div class="objection-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="objection-title">
+                            <h3>"I'm only in 2nd year, is it too early?"</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="answer-label">Actually, you're smart!</div>
+                        <p>Starting early gives you a huge advantage. You'll have time to build the right skills and make informed decisions while others are still confused in final year.</p>
+                    </div>
+                </div>
+                
+                <div class="objection-card">
+                    <div class="card-header">
+                        <div class="objection-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="objection-title">
+                            <h3>"What if I don't get results?"</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="answer-label">Our Track Record:</div>
+                        <p>500+ students have found clarity through our method. We're so confident that if you attend all 3 days and don't get value, we'll personally help you until you do.</p>
+                    </div>
+                </div>
+                
+                <div class="objection-card">
+                    <div class="card-header">
+                        <div class="objection-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="objection-title">
+                            <h3>"Will it be crowded and impersonal?"</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="answer-label">Limited Seats:</div>
+                        <p>We deliberately keep it small for maximum interaction. You'll get personal attention, networking opportunities, and direct access to speakers.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="urgency-section">
+                <div class="urgency-card fomo-urgency">
+                    <h3>⚡ FINAL COUNTDOWN: Seats Almost Gone!</h3>
+                    <div class="seat-counter">
+                        <div class="seats-visual">
+                            <span class="seat taken">●</span><span class="seat taken">●</span><span class="seat taken">●</span><span class="seat taken">●</span><span class="seat taken">●</span>
+                            <span class="seat taken">●</span><span class="seat taken">●</span><span class="seat available">●</span><span class="seat available">●</span><span class="seat available">●</span>
+                        </div>
+                </div>
+                    <div class="fomo-pressure">
+                        <p>💔 <strong>Don't be the one saying "I wish I had registered" while watching others succeed</strong></p>
+                    </div>
+                    <div class="fomo-consequence">
+                        <small>Miss this → Stay confused about your career → Watch others get ahead → Regret for years</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Your Career Transformation Starts Here</span>
+                <h2>Claim Your Spot Before It's Too Late</h2>
+                <div class="section-divider"></div>
+                <p><strong>Stop wasting time being confused.</strong> Join 500+ students who found their perfect career path through our proven 3-day method.</p>
+            </div>
+            
+            <div class="registration-stats fomo-stats">
+                <div class="stat-card fomo-stat-card">
+                    <div class="stat-number" id="registration-count">0</div>
+                    <div class="stat-label">Already Registered</div>
+                    <div class="fomo-subtext">Don't be left out!</div>
+                </div>
+                <div class="stat-card fomo-stat-card">
+                    <div class="stat-number" id="seats-remaining">100</div>
+                    <div class="stat-label">Seats Remaining</div>
+                    <div class="fomo-subtext">Filling fast!</div>
+                </div>
+                <div class="stat-card fomo-stat-card">
+                    <div class="stat-number" id="hours-left">96</div>
+                    <div class="stat-label">Hours Left</div>
+                    <div class="fomo-subtext">To register!</div>
+                </div>
+            </div>
+            
+            <!-- FOMO Registration Alert -->
+            <div class="fomo-registration-alert">
+                <div class="alert-content">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <div class="alert-text">
+                        <span class="highlight">Secure your spot now before it's too late!</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="register-content">
+                <div class="register-info">
+                    <div class="info-card">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Eligibility Guidelines</h3>
+                        <ul class="eligibility-list">
+                            <li>
+                                <strong>Day 1 (IT & Job Readiness):</strong>
+                                <span>3rd & 4th Year Students (All Departments)</span>
+                            </li>
+                            <li>
+                                <strong>Day 2 (Entrepreneurship):</strong>
+                                <span>2nd, 3rd & 4th Year Students (All Departments)</span>
+
+                                <strong>(Higher Studies & Govt):</strong>
+                                <span>2nd, 3rd & 4th Year Students (All Departments)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-gift"></i>
+                        <h3>What You'll Get</h3>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i> Networking opportunities</li>
+                            <li><i class="fas fa-check-circle"></i> Career resources & materials</li>
+                            <li><i class="fas fa-check-circle"></i> Certificate of participation</li>
+                            <li><i class="fas fa-check-circle"></i> Refreshments</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="register-form-container">
+                    <form id="registrationForm" class="register-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="department"><i class="fas fa-building"></i> Department</label>
+                                <select id="department" name="department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="CSE">Computer Science & Engineering</option>
+                                    <option value="IT">Information Technology</option>
+                                    <option value="ECE">Electronics & Communication</option>
+                                    <option value="EEE">Electrical & Electronics</option>
+                                    <option value="MECH">Mechanical Engineering</option>
+                                    <option value="CIVIL">Civil Engineering</option>
+                                    <option value="OTHER">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="year"><i class="fas fa-graduation-cap"></i> Year</label>
+                                <select id="year" name="year" required>
+                                    <option value="">Select Year</option>
+                                    <option value="1">1st Year</option>
+                                    <option value="2">2nd Year</option>
+                                    <option value="3">3rd Year</option>
+                                    <option value="4">4th Year</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <i class="fas fa-calendar-day"></i> Select Registration Package
+                            </label>
+                            <div class="pricing-selection">
+                                <label class="pricing-item">
+                                    <input type="radio" name="package" value="day1" id="day1-only">
+                                    <div class="pricing-card">
+                                        <h4>Day 1 Only</h4>
+                                        <div class="price-display">₹39</div>
+                                        <p>Tech & Non-Tech Job Opportunities</p>
+                                    </div>
+                                </label>
+                                <label class="pricing-item">
+                                    <input type="radio" name="package" value="day2" id="day2-only">
+                                    <div class="pricing-card">
+                                        <h4>Day 2 Only</h4>
+                                        <div class="price-display">₹39</div>
+                                        <p>Entrepreneurship + Government Jobs</p>
+                                    </div>
+                                </label>
+                                <label class="pricing-item popular-package">
+                                    <input type="radio" name="package" value="both" id="both-days">
+                                    <div class="pricing-card">
+                                        <div class="popular-tag">Most Popular</div>
+                                        <h4>Both Days</h4>
+                                        <div class="price-display">₹75</div>
+                                        <p>Complete Career Package</p>
+                                        <div class="savings-tag">Save ₹3!</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div id="eligibilityWarning" class="warning-message"></div>
+                        </div>
+                        
+                        <!-- Payment Section -->
+                        <div class="form-group payment-section">
+                            <label class="payment-label">
+                                <i class="fas fa-credit-card"></i> Payment Method
+                            </label>
+                            
+                            <div class="payment-info">
+                                <div class="upi-details">
+                                    <h4>Pay via UPI</h4>
+                                    <p class="upi-id">UPI ID: <strong>jyothidasari106@oksbi</strong><br>ENTER NAME AND DEPT IN NOTE</p>
+
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i> Submit Registration
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get in Touch</span>
+                <h2>Contact Us</h2>
+                <div class="section-divider"></div>
+                <p>Have questions? Reach out to our organizing team</p>
+            </div>
+            
+            <div class="contact-content">                
+                <div class="organizing-team">
+                    <h3><i class="fas fa-users"></i> Organizing Team</h3>
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <i class="fas fa-user-tie"></i>
+                            <h4>Sakthi Uma Devi</h4>
+                            <p>Event Coordinator</p>
+                            <p><i class="fas fa-phone"></i> +91 9885587194</p>
+                        </div>
+                        <div class="team-member">
+                            <i class="fas fa-user-tie"></i>
+                            <h4>Deva Dinesh</h4>
+                            <p>Technical Lead</p>
+                            <p><i class="fas fa-phone"></i> +91 9943394328</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Career Roadmap</h3>
+                    <p>Empowering engineering students to achieve their career dreams</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Important</h4>
+                    <ul>
+                        <li><a href="#register">Register</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Career Roadmap After Engineering - Career Mela. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Admin Access Button -->
+    <button id="adminAccessBtn" class="admin-access-btn" onclick="showAdminPanel()">
+        <i class="fas fa-user-shield"></i>
+    </button>
+
+    <script>
+        // ===================================
+// Career Roadmap After Engineering - Career Mela
+// Interactive JavaScript
+// ===================================
+
+// ===== Mobile Navigation Toggle =====
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
+
+// ===== Smooth Scrolling =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const offset = 80;
+            const targetPosition = target.offsetTop - offset;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// ===== Navbar Background on Scroll =====
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(255, 215, 0, 0.2)';
+    } else {
+        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        navbar.style.boxShadow = '0 2px 20px rgba(255, 215, 0, 0.1)';
+    }
+});
+
+// ===== Scroll to Top Button =====
+const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('show');
+    } else {
+        scrollTopBtn.classList.remove('show');
+    }
+});
+
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// ===== Scroll Animations =====
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Observe all timeline items and cards
+document.querySelectorAll('.timeline-item, .speaker-card, .feature-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'all 0.6s ease';
+    observer.observe(el);
+});
+
+// ===== Supabase Configuration =====
+const SUPABASE_URL = 'https://fryjmvvmytuplhilxkth.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZyeWptdnZteXR1cGxoaWx4a3RoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk1Mzg2MjEsImV4cCI6MjA3NTExNDYyMX0.FX31WtqEJ7Y5W1N4m4hhMurq0gxMQn2vhlsvERFrLl4';
+
+// Registration Storage (Local fallback)
+const REGISTRATION_KEY = 'career_roadmap_registrations';
+
+function getRegistrations() {
+    try {
+        return JSON.parse(localStorage.getItem(REGISTRATION_KEY)) || [];
+    } catch {
+        return [];
+    }
+}
+
+// Check if email already exists in Supabase
+async function checkExistingRegistration(email) {
+    try {
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/career_registrations?email=eq.${encodeURIComponent(email)}&select=id,name,email,days`, {
+            headers: {
+                'apikey': SUPABASE_ANON_KEY,
+                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+            }
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            return data.length > 0 ? data[0] : null;
+        }
+        return null;
+    } catch (error) {
+        console.error('❌ Error checking existing registration:', error);
+        return null;
+    }
+}
+
+// Get total registration count from Supabase
+async function getTotalRegistrationCount() {
+    try {
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/career_registrations?select=id`, {
+            headers: {
+                'apikey': SUPABASE_ANON_KEY,
+                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+            }
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            return data.length;
+        }
+        return 0;
+    } catch (error) {
+        console.error('❌ Error getting registration count:', error);
+        return 0;
+    }
+}
+
+// Save registration to Supabase
+async function saveToSupabase(data) {
+    try {
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/career_registrations`, {
+            method: 'POST',
+            headers: {
+                'apikey': SUPABASE_ANON_KEY,
+                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+                'Content-Type': 'application/json',
+                'Prefer': 'return=minimal'
+            },
+            body: JSON.stringify({
+                name: data.name,
+                email: data.email,
+                phone: data.phone,
+                department: data.department,
+                year: parseInt(data.year),
+                days: [data.package], // Simple JavaScript array
+                motivation: data.motivation || '',
+                created_at: new Date().toISOString()
+            })
+        });
+
+        if (response.ok) {
+            console.log('✅ Registration saved to Supabase successfully!');
+            return true;
+        } else {
+            const errorData = await response.text();
+            console.error('❌ Supabase save failed:', response.status, errorData);
+            return false;
+        }
+    } catch (error) {
+        console.error('❌ Supabase connection error:', error);
+        return false;
+    }
+}
+
+// Enhanced registration save with duplicate check
+async function saveRegistrationAsync(data) {
+    try {
+        // First check if email already exists
+        const existingRegistration = await checkExistingRegistration(data.email);
+        if (existingRegistration) {
+            alert(`❌ Email address "${data.email}" is already registered!\n\nRegistered for: ${existingRegistration.days.join(', ')}\n\nPlease use a different email address.`);
+            return false;
+        }
+
+        // Try to save to Supabase first
+        const supabaseSuccess = await saveToSupabase(data);
+        
+        if (supabaseSuccess) {
+            // Also save to localStorage as backup
+            const registrations = getRegistrations();
+            const registrationData = {
+                ...data,
+                id: Date.now(),
+                timestamp: new Date().toISOString()
+            };
+            registrations.push(registrationData);
+            localStorage.setItem(REGISTRATION_KEY, JSON.stringify(registrations));
+            
+            console.log('🎯 Registration saved to both Supabase and localStorage');
+            
+            // Update all counters
+            await updateAllCounters();
+            
+            return true;
+        } else {
+            // Fallback to localStorage only
+            const registrations = getRegistrations();
+            const registrationData = {
+                ...data,
+                id: Date.now(),
+                timestamp: new Date().toISOString()
+            };
+            registrations.push(registrationData);
+            localStorage.setItem(REGISTRATION_KEY, JSON.stringify(registrations));
+            updateRegistrationCount();
+            
+            console.log('💾 Registration saved to localStorage only (Supabase failed)');
+            return true; // Still consider it successful since we have local backup
+        }
+    } catch (error) {
+        console.error('❌ Registration save failed completely:', error);
+        return false;
+    }
+}
+
+// Update all counters with real Supabase data
+async function updateAllCounters() {
+    try {
+        const totalCount = await getTotalRegistrationCount();
+        const maxSeats = 100;
+        const seatsRemaining = Math.max(0, maxSeats - totalCount);
+        
+        // Update registration count
+        const regCountEl = document.getElementById('registration-count');
+        if (regCountEl) {
+            animateCounter(regCountEl, totalCount);
+        }
+        
+        // Update seats left
+        const seatsLeftEl = document.getElementById('seats-left');
+        if (seatsLeftEl) {
+            animateCounter(seatsLeftEl, seatsRemaining);
+        }
+        
+        // Update seats remaining
+        const seatsRemainingEl = document.getElementById('seats-remaining');
+        if (seatsRemainingEl) {
+            animateCounter(seatsRemainingEl, seatsRemaining);
+        }
+        
+        // Update seat visualization
+        updateSeatVisualization(seatsRemaining);
+        
+        // Show urgency notifications
+        if (seatsRemaining <= 10 && seatsRemaining > 5) {
+            showFOMONotification(`🔥 URGENT: Only ${seatsRemaining} seats left!`);
+        } else if (seatsRemaining <= 5 && seatsRemaining > 0) {
+            showFOMONotification(`⚠️ FINAL WARNING: Only ${seatsRemaining} seats remaining!`);
+        } else if (seatsRemaining === 0) {
+            showFOMONotification(`❌ SOLD OUT: All seats are taken!`);
+        }
+        
+        console.log(`📊 Real-time stats - Registered: ${totalCount}, Seats Left: ${seatsRemaining}`);
+        
+    } catch (error) {
+        console.error('❌ Error updating counters:', error);
+        // Fallback to localStorage count
+        updateRegistrationCount();
+    }
+}
+
+function updateRegistrationCount() {
+    const count = getRegistrations().length;
+    const countEl = document.getElementById('registration-count');
+    if (countEl) {
+        countEl.textContent = count;
+        // Add animation
+        countEl.style.transform = 'scale(1.2)';
+        setTimeout(() => countEl.style.transform = 'scale(1)', 200);
+    }
+    console.log(`📊 Total registrations: ${count}`);
+}
+
+// Fetch registrations from Supabase
+async function fetchFromSupabase() {
+    try {
+        const response = await fetch(`${SUPABASE_URL}/rest/v1/career_registrations?select=*`, {
+            headers: {
+                'apikey': SUPABASE_ANON_KEY,
+                'Authorization': `Bearer ${SUPABASE_ANON_KEY}`
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`Supabase fetch error: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log(`📊 Fetched ${data.length} registrations from Supabase`);
+        return data;
+    } catch (error) {
+        console.error('❌ Failed to fetch from Supabase:', error);
+        return [];
+    }
+}
+
+// Export registrations as CSV (Admin function)
+async function exportRegistrationsCSV() {
+    // Try to get data from Supabase first, fallback to localStorage
+    let registrations = await fetchFromSupabase();
+    
+    if (registrations.length === 0) {
+        registrations = getRegistrations();
+    }
+    
+    if (registrations.length === 0) {
+        alert('No registrations to export.');
+        return;
+    }
+
+    const headers = ['ID', 'Name', 'Email', 'Phone', 'Department', 'Year', 'Days', 'Timestamp'];
+    const csvContent = [
+        headers.join(','),
+        ...registrations.map(reg => [
+            reg.id || 'N/A',
+            `"${reg.name}"`,
+            `"${reg.email}"`,
+            `"${reg.phone}"`,
+            `"${reg.department}"`,
+            `"${reg.year}"`,
+            `"${Array.isArray(reg.days) ? reg.days.join('; ') : reg.days || ''}"`,
+            `"${reg.timestamp || reg.created_at || ''}"`
+        ].join(','))
+    ].join('\n');
+
+    const blob = new Blob([csvContent], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `career_roadmap_registrations_${new Date().toISOString().split('T')[0]}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+}
+
+// ===== Registration Form Validation =====
+const registrationForm = document.getElementById('registrationForm');
+const yearSelect = document.getElementById('year');
+const packageRadios = document.querySelectorAll('input[name="package"]');
+const eligibilityWarning = document.getElementById('eligibilityWarning');
+
+// Eligibility rules for new package system
+const eligibilityRules = {
+    day1: [2, 3, 4],        // Day 1: Tech & Non-Tech Jobs (2nd, 3rd, 4th year)
+    day2: [2, 3, 4],        // Day 2: Entrepreneurship & Govt Jobs (2nd, 3rd, 4th year)
+    both: [2, 3, 4]         // Both days (2nd, 3rd, 4th year)
+};
+
+// Check eligibility when year or package changes
+function checkEligibility() {
+    const selectedYear = parseInt(yearSelect.value);
+    if (!selectedYear) return;
+
+    const selectedPackage = document.querySelector('input[name="package"]:checked');
+    if (!selectedPackage) {
+        eligibilityWarning.classList.remove('show');
+        return;
+    }
+
+    const packageValue = selectedPackage.value;
+    const allowedYears = eligibilityRules[packageValue];
+    
+    if (!allowedYears.includes(selectedYear)) {
+        const packageNames = {
+            day1: 'Day 1 (Tech & Non-Tech Jobs)',
+            day2: 'Day 2 (Entrepreneurship & Government Jobs)',
+            both: 'Both Days Package'
+        };
+        
+        eligibilityWarning.innerHTML = `
+            <i class="fas fa-exclamation-triangle"></i>
+            <strong>Eligibility Issue:</strong> ${packageNames[packageValue]} 
+            is only available for 2nd, 3rd, and 4th year students.
+        `;
+        eligibilityWarning.classList.add('show');
+    } else {
+        eligibilityWarning.classList.remove('show');
+    }
+}
+
+// Add event listeners for package radio buttons
+packageRadios.forEach(radio => {
+    radio.addEventListener('change', checkEligibility);
+});
+
+// Add event listener for year select
+yearSelect.addEventListener('change', checkEligibility);
+
+// Form submission
+registrationForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = {
+        name: document.getElementById('name').value,
+        department: document.getElementById('department').value,
+        year: document.getElementById('year').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        package: document.querySelector('input[name="package"]:checked')?.value
+    };
+
+    // Validate package is selected
+    if (!formData.package) {
+        alert('Please select a registration package.');
+        return;
+    }
+
+    // Check eligibility before submission
+    const selectedYear = parseInt(formData.year);
+    const allowedYears = eligibilityRules[formData.package];
+    
+    if (!allowedYears.includes(selectedYear)) {
+        alert('The selected package is not available for your year. Please choose a different package.');
+        return;
+    }
+
+    // Show loading state
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = '🚀 Registering...';
+    submitBtn.disabled = true;
+
+    try {
+        // Save registration (this will try Supabase first, then localStorage)
+        const success = await saveRegistrationAsync(formData);
+        
+        if (success) {
+            // Show success message
+            showSuccessMessage(formData);
+            
+            // Reset form
+            registrationForm.reset();
+            eligibilityWarning.classList.remove('show');
+            
+            // Create confetti effect
+            createConfetti();
+            
+            console.log('🎉 Registration completed successfully!');
+        } else {
+            throw new Error('Failed to save registration');
+        }
+        
+    } catch (error) {
+        console.error('Registration error:', error);
+        alert('Registration failed. Please try again. Check the console for details.');
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
+
+function showSuccessMessage(data) {
+    const packageNames = {
+        day1: 'Day 1 (Tech & Non-Tech Jobs)',
+        day2: 'Day 2 (Entrepreneurship & Government Jobs)',
+        both: 'Both Days Package'
+    };
+    
+    const daysText = packageNames[data.package] || data.package;
+    
+    const message = `
+        <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+                    background: white; padding: 3rem; border-radius: 20px; 
+                    box-shadow: 0 10px 50px rgba(0,0,0,0.3); z-index: 10000; 
+                    max-width: 500px; text-align: center;">
+            <div style="font-size: 4rem; color: #FFD700; margin-bottom: 1rem;">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2 style="color: #1a1a1a; margin-bottom: 1rem;">Registration Successful!</h2>
+            <p style="color: #666; margin-bottom: 1.5rem;">
+                Thank you, <strong>${data.name}</strong>!<br>
+                You have successfully registered for <strong>${daysText}</strong>.
+            </p>
+            <p style="color: #666; font-size: 0.9rem; margin-bottom: 1.5rem;">
+                A confirmation email will be sent to <strong>${data.email}</strong>
+            </p>
+            <div style="background: #25D366; padding: 1rem; border-radius: 15px; margin-bottom: 1.5rem;">
+                <p style="color: white; margin: 0 0 0.5rem 0; font-weight: 600;">
+                    <i class="fab fa-whatsapp"></i> Join Our WhatsApp Group
+                </p>
+                <a href="https://chat.whatsapp.com/Bg8x4s0c5EUCP5qTK8mIBX" 
+                   target="_blank"
+                   style="background: white; color: #25D366; padding: 0.8rem 1.5rem; 
+                          border-radius: 25px; text-decoration: none; font-weight: 600;
+                          display: inline-block; transition: all 0.3s ease;">
+                    <i class="fab fa-whatsapp"></i> Join Group
+                </a>
+            </div>
+            <button onclick="this.parentElement.remove()" 
+                    style="background: linear-gradient(135deg, #FFD700 0%, #DAA520 100%); 
+                           color: #0a0a0a; border: none; padding: 1rem 2rem; 
+                           border-radius: 50px; font-weight: 600; cursor: pointer; 
+                           font-size: 1rem; font-family: 'Poppins', sans-serif;">
+                <i class="fas fa-times"></i> Close
+            </button>
+        </div>
+        <div onclick="this.remove()" 
+             style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+                    background: rgba(0,0,0,0.7); z-index: 9999;"></div>
+    `;
+    
+    document.body.insertAdjacentHTML('beforeend', message);
+}
+
+// Confetti effect
+function createConfetti() {
+    const colors = ['#FFD700', '#DAA520', '#B8860B', '#ffffff', '#1a1a1a'];
+    const confettiCount = 50;
+    
+    for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.style.cssText = `
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: ${colors[Math.floor(Math.random() * colors.length)]};
+            left: ${Math.random() * 100}vw;
+            top: -10px;
+            z-index: 1000;
+            pointer-events: none;
+            border-radius: 50%;
+        `;
+        
+        document.body.appendChild(confetti);
+        
+        // Animate confetti
+        const animation = confetti.animate([
+            { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
+            { transform: `translateY(100vh) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+        ], {
+            duration: Math.random() * 2000 + 1000,
+            easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+        });
+        
+        animation.onfinish = () => confetti.remove();
+    }
+}
+
+// Admin Configuration
+const ADMIN_PASSWORD = '2025';
+let isAdminAuthenticated = false;
+let tapCount = 0;
+let tapTimer = null;
+
+// Admin authentication
+function authenticateAdmin() {
+    const password = prompt('🔐 Enter Admin Password:');
+    if (password === ADMIN_PASSWORD) {
+        isAdminAuthenticated = true;
+        return true;
+    } else if (password !== null) {
+        alert('❌ Incorrect password!');
+    }
+    return false;
+}
+
+// Mobile admin access function
+function openMobileAdmin() {
+    if (!isAdminAuthenticated) {
+        if (!authenticateAdmin()) {
+            return;
+        }
+    }
+    
+    const panel = document.getElementById('admin-panel');
+    if (panel) {
+        panel.style.display = 'block';
+        updateAdminPanelContent();
+    }
+}
+
+// Secret tap gesture for mobile admin (tap logo 7 times quickly)
+function handleLogoTap() {
+    tapCount++;
+    
+    if (tapTimer) {
+        clearTimeout(tapTimer);
+    }
+    
+    tapTimer = setTimeout(() => {
+        tapCount = 0;
+    }, 2000);
+    
+    if (tapCount >= 7) {
+        tapCount = 0;
+        openMobileAdmin();
+    }
+}
+
+// Admin panel
+async function createAdminPanel() {
+    const adminPanel = document.createElement('div');
+    adminPanel.id = 'admin-panel';
+    adminPanel.style.cssText = `
+        position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1000;
+        background: rgba(0,0,0,0.95); color: white; padding: 20px;
+        border-radius: 15px; font-size: 14px; display: none;
+        border: 2px solid rgba(255,215,0,0.5);
+        backdrop-filter: blur(15px); width: 90%; max-width: 400px; max-height: 85vh;
+        overflow-y: auto; box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    `;
+    
+    await updateAdminPanelContent();
+    document.body.appendChild(adminPanel);
+    
+    // Show admin panel with Ctrl+Shift+A (with password)
+    document.addEventListener('keydown', async (e) => {
+        if (e.ctrlKey && e.shiftKey && e.key === 'A') {
+            e.preventDefault();
+            
+            if (!isAdminAuthenticated) {
+                if (!authenticateAdmin()) {
+                    return;
+                }
+            }
+            
+            const panel = document.getElementById('admin-panel');
+            panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+            
+            if (panel.style.display === 'block') {
+                await updateAdminPanelContent();
+            }
+        }
+    });
+}
+
+// Update admin panel content
+async function updateAdminPanelContent() {
+    const adminPanel = document.getElementById('admin-panel');
+    if (!adminPanel) return;
+
+    const localRegistrations = getRegistrations();
+    const supabaseRegistrations = await fetchFromSupabase();
+    
+    adminPanel.innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+            <h4 style="margin: 0; color: #FFD700;">🔧 Admin Dashboard</h4>
+            <button onclick="document.getElementById('admin-panel').style.display='none'" style="background: #ef4444; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer;">✕</button>
+        </div>
+        
+        <div style="background: rgba(255,215,0,0.1); border-radius: 10px; padding: 15px; margin-bottom: 15px;">
+            <h5 style="margin: 0 0 10px 0; color: #FFD700;">📊 Registration Statistics</h5>
+            <p style="margin: 5px 0;">📱 Local Backup: <strong style="color: #22c55e;">${localRegistrations.length}</strong></p>
+            <p style="margin: 5px 0;">☁️ Supabase Database: <strong style="color: #FFD700;" id="supabase-count">${supabaseRegistrations.length}</strong></p>
+            <p style="margin: 5px 0;">🔄 Last Updated: <strong>${new Date().toLocaleTimeString()}</strong></p>
+        </div>
+        
+        <div style="background: rgba(34,197,94,0.1); border-radius: 10px; padding: 15px; margin-bottom: 15px;">
+            <h5 style="margin: 0 0 10px 0; color: #4ade80;">📋 Recent Registrations</h5>
+            <div id="recent-registrations" style="max-height: 200px; overflow-y: auto;">
+                ${await getRecentRegistrationsHTML(supabaseRegistrations.slice(-5))}
+            </div>
+        </div>
+        
+        <div style="display: grid; gap: 8px;">
+            <button onclick="exportRegistrationsCSV()" style="padding: 12px; background: #FFD700; color: #000; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">📊 Export All Data (CSV)</button>
+            <button onclick="refreshAdminData()" style="padding: 12px; background: #22c55e; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">🔄 Refresh Data</button>
+            <button onclick="viewAllRegistrations()" style="padding: 12px; background: #f59e0b; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">👥 View All Registrations</button>
+            <button onclick="logoutAdmin()" style="padding: 12px; background: #ef4444; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">🚪 Logout</button>
+        </div>
+    `;
+}
+
+// Get recent registrations HTML
+async function getRecentRegistrationsHTML(registrations) {
+    if (registrations.length === 0) {
+        return '<p style="color: #9ca3af; font-style: italic;">No recent registrations</p>';
+    }
+    
+    return registrations.map(reg => `
+        <div style="background: rgba(255,255,255,0.05); border-radius: 6px; padding: 10px; margin-bottom: 8px;">
+            <div style="font-weight: 600; color: #fff;">${reg.name}</div>
+            <div style="font-size: 12px; color: #9ca3af;">${reg.email} • ${reg.department}</div>
+            <div style="font-size: 11px; color: #6b7280;">Days: ${Array.isArray(reg.days) ? reg.days.join(', ') : reg.days}</div>
+        </div>
+    `).join('');
+}
+
+// View all registrations in a modal
+async function viewAllRegistrations() {
+    const registrations = await fetchFromSupabase();
+    
+    const modal = document.createElement('div');
+    modal.style.cssText = `
+        position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 2000;
+        background: rgba(0,0,0,0.8); display: flex; align-items: center; justify-content: center;
+        backdrop-filter: blur(5px);
+    `;
+    
+    modal.innerHTML = `
+        <div style="background: #1a1a1a; border-radius: 15px; padding: 20px; max-width: 90%; max-height: 80%; overflow: auto; border: 2px solid #FFD700;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <h3 style="color: #FFD700; margin: 0;">👥 All Registrations (${registrations.length})</h3>
+                <button onclick="this.parentElement.parentElement.parentElement.remove()" style="background: #ef4444; color: white; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer;">✕</button>
+            </div>
+            <div style="overflow-x: auto;">
+                ${generateRegistrationsTable(registrations)}
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+}
+
+// Generate registrations table
+function generateRegistrationsTable(registrations) {
+    if (registrations.length === 0) {
+        return '<p style="color: #9ca3af;">No registrations found.</p>';
+    }
+    
+    return `
+        <table style="width: 100%; border-collapse: collapse; font-size: 12px; color: white;">
+            <thead>
+                <tr style="background: rgba(255,215,0,0.2);">
+                    <th style="padding: 8px; border: 1px solid #374151;">Name</th>
+                    <th style="padding: 8px; border: 1px solid #374151;">Email</th>
+                    <th style="padding: 8px; border: 1px solid #374151;">Department</th>
+                    <th style="padding: 8px; border: 1px solid #374151;">Year</th>
+                    <th style="padding: 8px; border: 1px solid #374151;">Days</th>
+                    <th style="padding: 8px; border: 1px solid #374151;">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${registrations.map(reg => `
+                    <tr style="border-bottom: 1px solid #374151;">
+                        <td style="padding: 8px; border: 1px solid #374151;">${reg.name}</td>
+                        <td style="padding: 8px; border: 1px solid #374151;">${reg.email}</td>
+                        <td style="padding: 8px; border: 1px solid #374151;">${reg.department}</td>
+                        <td style="padding: 8px; border: 1px solid #374151;">${reg.year}</td>
+                        <td style="padding: 8px; border: 1px solid #374151;">${Array.isArray(reg.days) ? reg.days.join(', ') : reg.days}</td>
+                        <td style="padding: 8px; border: 1px solid #374151;">${new Date(reg.created_at || reg.timestamp).toLocaleDateString()}</td>
+                    </tr>
+                `).join('')}
+            </tbody>
+        </table>
+    `;
+}
+
+// Logout admin
+function logoutAdmin() {
+    isAdminAuthenticated = false;
+    document.getElementById('admin-panel').style.display = 'none';
+    alert('🚪 Logged out successfully!');
+}
+
+// Refresh admin panel data
+async function refreshAdminData() {
+    await updateAdminPanelContent();
+}
+
+// This old checkbox code has been removed since we now use radio buttons
+
+// ===== Parallax Effect for Hero Section =====
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const heroContent = document.querySelector('.hero-content');
+    if (heroContent) {
+        heroContent.style.transform = `translateY(${scrolled * 0.5}px)`;
+        heroContent.style.opacity = 1 - (scrolled / 700);
+    }
+});
+
+// ===== Counter Animation for Stats =====
+function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(start);
+        }
+    }, 16);
+}
+
+// Trigger counter animation when stats section is visible
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const statItems = entry.target.querySelectorAll('.stat-item h3');
+            statItems.forEach(item => {
+                const text = item.textContent;
+                if (!isNaN(text)) {
+                    animateCounter(item, parseInt(text));
+                }
+            });
+            statsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+const heroStats = document.querySelector('.hero-stats');
+if (heroStats) {
+    statsObserver.observe(heroStats);
+}
+
+// ===== Add active state to navigation links based on scroll position =====
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const scrollY = window.pageYOffset;
+
+    sections.forEach(section => {
+        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 100;
+        const sectionId = section.getAttribute('id');
+        const navLink = document.querySelector(`.nav-menu a[href="#${sectionId}"]`);
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.classList.remove('active');
+            });
+            if (navLink) {
+                navLink.classList.add('active');
+            }
+        }
+    });
+});
+
+// ===== Typing Effect for Hero Tagline =====
+function typeWriter(element, text, speed = 100) {
+    let i = 0;
+    element.textContent = '';
+    
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
+        }
+    }
+    
+    type();
+}
+
+// Initialize typing effect on page load
+window.addEventListener('load', () => {
+    const tagline = document.querySelector('.hero-tagline');
+    if (tagline) {
+        const originalText = tagline.textContent;
+        setTimeout(() => {
+            typeWriter(tagline, originalText, 50);
+        }, 1000);
+    }
+});
+
+// Initialize everything on DOM load
+document.addEventListener('DOMContentLoaded', async () => {
+    // Update registration count with real Supabase data
+    await updateAllCounters();
+    
+    // Create admin panel
+    createAdminPanel();
+    
+    // Add logo tap handler for mobile admin access
+    const navBrand = document.querySelector('.nav-brand');
+    if (navBrand) {
+        navBrand.addEventListener('click', handleLogoTap);
+    }
+    
+    // Initialize FOMO elements
+    initializeFOMO();
+    
+    // Start real-time updates
+    startRealTimeUpdates();
+});
+
+// ===== FOMO Functions =====
+function initializeFOMO() {
+    // Update FOMO counters with real data
+    updateFOMOCounters();
+    
+    // Start live activity feed
+    startLiveActivityFeed();
+    
+    // Start countdown timer
+    startCountdownTimer();
+}
+
+async function updateFOMOCounters() {
+    try {
+        // Get real data from Supabase
+        const totalCount = await getTotalRegistrationCount();
+        const maxSeats = 100;
+        const seatsRemaining = Math.max(0, maxSeats - totalCount);
+        
+        // Update counters with animation
+        animateCounter(document.getElementById('seats-left'), seatsRemaining);
+        animateCounter(document.getElementById('seats-remaining'), seatsRemaining);
+        
+        // Update registration count in FOMO stats
+        const regCountEl = document.getElementById('registration-count');
+        if (regCountEl) {
+            animateCounter(regCountEl, totalCount);
+        }
+        
+        console.log(`🔄 FOMO counters updated - Registered: ${totalCount}, Seats Left: ${seatsRemaining}`);
+        
+    } catch (error) {
+        console.error('❌ Error updating FOMO counters:', error);
+        // Fallback to localStorage
+        const registrationCount = getRegistrations().length;
+        const seatsRemaining = Math.max(0, 100 - registrationCount);
+        
+        animateCounter(document.getElementById('seats-left'), seatsRemaining);
+        animateCounter(document.getElementById('seats-remaining'), seatsRemaining);
+        
+        const regCountEl = document.getElementById('registration-count');
+        if (regCountEl) {
+            animateCounter(regCountEl, registrationCount);
+        }
+    }
+}
+
+function startLiveActivityFeed() {
+    const activities = [
+        { name: "Arjun K.", dept: "CSE", action: "registered for all 3 days" },
+        { name: "Meera P.", dept: "ECE", action: "secured her spot" },
+        { name: "Vikram S.", dept: "Mechanical", action: "just registered" },
+        { name: "Priya R.", dept: "IT", action: "booked Day 1 & 2" },
+        { name: "Rohit M.", dept: "EEE", action: "registered for startup day" },
+        { name: "Sneha L.", dept: "Civil", action: "secured all 3 days" },
+        { name: "Karthik N.", dept: "CSE", action: "just joined the event" },
+        { name: "Divya S.", dept: "ECE", action: "registered successfully" }
+    ];
+    
+    const activityFeed = document.getElementById('activity-feed');
+    if (!activityFeed) return;
+    
+    let currentIndex = 0;
+    
+    setInterval(() => {
+        const activity = activities[currentIndex];
+        const timeAgo = Math.floor(Math.random() * 15) + 1; // 1-15 minutes ago
+        
+        const newActivity = document.createElement('div');
+        newActivity.className = 'activity-item';
+        newActivity.innerHTML = `
+            <span class="activity-time">${timeAgo} min ago</span>
+            <span class="activity-text">${activity.name} from ${activity.dept} ${activity.action}</span>
+        `;
+        
+        // Add to top of feed
+        activityFeed.insertBefore(newActivity, activityFeed.firstChild);
+        
+        // Remove oldest if more than 3 items
+        if (activityFeed.children.length > 3) {
+            activityFeed.removeChild(activityFeed.lastChild);
+        }
+        
+        currentIndex = (currentIndex + 1) % activities.length;
+    }, 8000); // New activity every 8 seconds
+}
+
+function startCountdownTimer() {
+    const countdownDays = document.getElementById('countdown-days');
+    const hoursLeft = document.getElementById('hours-left');
+    
+    if (!countdownDays && !hoursLeft) return;
+    
+    // Set target date (4 days from now)
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 4);
+    targetDate.setHours(23, 59, 59, 999); // End of day
+    
+    function updateCountdown() {
+        const now = new Date();
+        const timeDiff = targetDate - now;
+        
+        if (timeDiff > 0) {
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const totalHours = Math.floor(timeDiff / (1000 * 60 * 60));
+            
+            if (countdownDays) countdownDays.textContent = days;
+            if (hoursLeft) hoursLeft.textContent = totalHours;
+        }
+    }
+    
+    updateCountdown();
+    setInterval(updateCountdown, 60000); // Update every minute
+}
+
+// Real-time counter refresh (every 30 seconds)
+function startRealTimeUpdates() {
+    // Update counters immediately
+    updateAllCounters();
+    
+    // Then update every 30 seconds to catch new registrations
+    setInterval(async () => {
+        await updateAllCounters();
+    }, 30000); // 30 seconds
+}
+
+function updateSeatVisualization(availableSeats) {
+    const seatsVisual = document.querySelector('.seats-visual');
+    if (!seatsVisual) return;
+    
+    const totalSeats = 10; // Visual representation
+    const takenSeats = Math.floor((100 - availableSeats) / 10);
+    
+    seatsVisual.innerHTML = '';
+    
+    for (let i = 0; i < totalSeats; i++) {
+        const seat = document.createElement('span');
+        seat.className = i < takenSeats ? 'seat taken' : 'seat available';
+        seat.textContent = '●';
+        seatsVisual.appendChild(seat);
+    }
+}
+
+function showFOMONotification(message) {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background: linear-gradient(135deg, #ff4500, #ff6b35);
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 15px;
+        font-weight: 600;
+        z-index: 1001;
+        animation: slideInRight 0.5s ease, shake 0.5s ease 2s;
+        box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
+        max-width: 300px;
+    `;
+    notification.textContent = message;
+    
+    document.body.appendChild(notification);
+    
+    // Remove after 4 seconds
+    setTimeout(() => {
+        notification.style.animation = 'slideOutRight 0.5s ease';
+        setTimeout(() => {
+            document.body.removeChild(notification);
+        }, 500);
+    }, 4000);
+}
+
+// Enhanced counter animation for FOMO
+function animateCounter(element, target, duration = 1500) {
+    if (!element) return;
+    
+    const start = parseInt(element.textContent) || 0;
+    const increment = (target - start) / (duration / 16);
+    let current = start;
+    
+    const timer = setInterval(() => {
+        current += increment;
+        if ((increment > 0 && current >= target) || (increment < 0 && current <= target)) {
+            element.textContent = target;
+            clearInterval(timer);
+            
+            // Add emphasis animation
+            element.style.transform = 'scale(1.2)';
+            element.style.color = '#ff4500';
+            setTimeout(() => {
+                element.style.transform = 'scale(1)';
+                element.style.color = '';
+            }, 300);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 16);
+}
+
+// Add CSS for new animations
+const fomoStyles = `
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutRight {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+}
+`;
+
+// Inject FOMO styles
+const fomoStyleSheet = document.createElement('style');
+fomoStyleSheet.textContent = fomoStyles;
+document.head.appendChild(fomoStyleSheet);
+
+// ===== Form Input Animations =====
+const formInputs = document.querySelectorAll('.form-group input, .form-group select');
+
+formInputs.forEach(input => {
+    input.addEventListener('focus', function() {
+        this.parentElement.style.transform = 'translateY(-2px)';
+        this.parentElement.style.transition = 'transform 0.3s ease';
+    });
+
+    input.addEventListener('blur', function() {
+        this.parentElement.style.transform = 'translateY(0)';
+    });
+});
+
+// ===== Console Welcome Message =====
+console.log('%c🏆 Career Roadmap After Engineering - Career Mela 2025', 
+    'font-size: 20px; font-weight: bold; color: #FFD700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);');
+console.log('%cExplore Jobs, Build Startups, Aim Higher', 
+    'font-size: 14px; color: #DAA520;');
+console.log('%cWebsite developed with ❤️ for engineering students', 
+    'font-size: 12px; color: #666;');
+
+// ===== Prevent form resubmission on page refresh =====
+if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+}
+
+    </script>
+</body>
+</html>
