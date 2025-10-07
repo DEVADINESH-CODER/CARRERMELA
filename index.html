@@ -3629,178 +3629,23 @@ section {
         </div>
     </section>
 
-    <!-- Registration Section -->
-    <section id="register" class="register">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Your Career Transformation Starts Here</span>
-                <h2>Claim Your Spot Before It's Too Late</h2>
-                <div class="section-divider"></div>
-                <p><strong>Stop wasting time being confused.</strong> Join 500+ students who found their perfect career path through our proven 3-day method.</p>
-            </div>
-            
-            <div class="registration-stats fomo-stats">
-                <div class="stat-card fomo-stat-card">
-                    <div class="stat-number" id="registration-count">0</div>
-                    <div class="stat-label">Already Registered</div>
-                    <div class="fomo-subtext">Don't be left out!</div>
-                </div>
-                <div class="stat-card fomo-stat-card">
-                    <div class="stat-number" id="seats-remaining">100</div>
-                    <div class="stat-label">Seats Remaining</div>
-                    <div class="fomo-subtext">Filling fast!</div>
-                </div>
-                <div class="stat-card fomo-stat-card">
-                    <div class="stat-number" id="hours-left">2</div>
-                    <div class="stat-label">Hours Left</div>
-                    <div class="fomo-subtext">To register!</div>
-                </div>
-            </div>
-            
-            <!-- FOMO Registration Alert -->
-            <div class="fomo-registration-alert">
-                <div class="alert-content">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <div class="alert-text">
-                        <span class="highlight">Secure your spot now before it's too late!</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="register-content">
-                <div class="register-info">
-                    <div class="info-card">
-                        <i class="fas fa-calendar-check"></i>
-                        <h3>Eligibility Guidelines</h3>
-                        <ul class="eligibility-list">
-                            <li>
-                                <strong>Day 1 (IT & Job Readiness):</strong>
-                                <span>3rd & 4th Year Students (All Departments)</span>
-                            </li>
-                            <li>
-                                <strong>Day 2 (Entrepreneurship):</strong>
-                                <span>3rd & 4th Year Students (All Departments)</span>
-
-                                <strong>(Higher Studies & Govt):</strong>
-                                <span>3rd & 4th Year Students (All Departments)</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-gift"></i>
-                        <h3>What You'll Get</h3>
-                        <ul class="benefits-list">
-                            <li><i class="fas fa-check-circle"></i> Networking opportunities</li>
-                            <li><i class="fas fa-check-circle"></i> Career resources & materials</li>
-                            <li><i class="fas fa-check-circle"></i> Certificate of participation</li>
-                            <li><i class="fas fa-check-circle"></i> Refreshments</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="register-form-container">
-                    <form id="registrationForm" class="register-form">
-                        <div class="form-group">
-                            <label for="name"><i class="fas fa-user"></i> Full Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="department"><i class="fas fa-building"></i> Department</label>
-                                <select id="department" name="department" required>
-                                    <option value="">Select Department</option>
-                                    <option value="CSE">Computer Science & Engineering</option>
-                                    <option value="IT">Information Technology</option>
-                                    <option value="ECE">Electronics & Communication</option>
-                                    <option value="EEE">Electrical & Electronics</option>
-                                    <option value="MECH">Mechanical Engineering</option>
-                                    <option value="CIVIL">Civil Engineering</option>
-                                    <option value="OTHER">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="year"><i class="fas fa-graduation-cap"></i> Year</label>
-                                <select id="year" name="year" required>
-                                    <option value="">Select Year</option>
-                                    <option value="3">3rd Year</option>
-                                    <option value="4">4th Year</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email"><i class="fas fa-envelope"></i> Email</label>
-                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="phone"><i class="fas fa-phone"></i> Phone</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label class="checkbox-label">
-                                <i class="fas fa-calendar-day"></i> Select Registration Package
-                            </label>
-                            <div class="pricing-selection">
-                                <label class="pricing-item">
-                                    <input type="radio" name="package" value="day1" id="day1-only">
-                                    <div class="pricing-card">
-                                        <h4>Day 1 Only</h4>
-                                        <div class="price-display">₹39</div>
-                                        <p>Tech & Non-Tech Job Opportunities</p>
-                                    </div>
-                                </label>
-                                <label class="pricing-item">
-                                    <input type="radio" name="package" value="day2" id="day2-only">
-                                    <div class="pricing-card">
-                                        <h4>Day 2 Only</h4>
-                                        <div class="price-display">₹39</div>
-                                        <p>Entrepreneurship + Government Jobs</p>
-                                    </div>
-                                </label>
-                                <label class="pricing-item popular-package">
-                                    <input type="radio" name="package" value="both" id="both-days">
-                                    <div class="pricing-card">
-                                        <div class="popular-tag">Most Popular</div>
-                                        <h4>Both Days</h4>
-                                        <div class="price-display">₹75</div>
-                                        <p>Complete Career Package</p>
-                                        <div class="savings-tag">Save ₹3!</div>
-                                    </div>
-                                </label>
-                            </div>
-                            <div id="eligibilityWarning" class="warning-message"></div>
-                        </div>
-                        
-                        <!-- Payment Section -->
-                        <div class="form-group payment-section">
-                            <label class="payment-label">
-                                <i class="fas fa-credit-card"></i> Payment Method
-                            </label>
-                            
-                            <div class="payment-info">
-                                <div class="upi-details">
-                                    <h4>Pay via UPI</h4>
-                                    <p class="upi-id">UPI ID: <strong>jyothidasari106@oksbi</strong><br>ENTER NAME AND DEPT IN NOTE</p>
-
-                                </div>
-                            </div>
-                        
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-large">
-                            <i class="fas fa-paper-plane"></i> Submit Registration
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Registration Closed Banner -->
+<div style="
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    z-index: 1001;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+    font-weight: 600;
+    animation: pulse 2s infinite;
+">
+    🚫 REGISTRATION CLOSED - Event capacity reached!
+</div>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
